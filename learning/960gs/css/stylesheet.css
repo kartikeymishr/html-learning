@@ -1,0 +1,33 @@
+.container_12 {
+    background: red;
+}
+
+nav li {
+    display: inline;
+}
+
+header {
+    background: yellow;
+}
+
+nav {
+    background: orange;
+}
+
+aside {
+    background: gray;
+}
+
+section {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.primary {
+    background: green;
+}
+
+.main {
+    margin: 30px 0;
+}
+
