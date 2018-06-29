@@ -36,18 +36,19 @@ header h1 {
 
 /* Hero styling */
 .hero {
-    background-image: url("../img/hero_cropped.jpg");
-    height: 40%;
+    background-image: url("../img/hero2_resized_cropped.jpg");
+    height: 50%;
     margin-top: 48px;
 }
 
 .hero h3 {
     display: block;
     text-align: center;
-    font-size: 90px;
+    color: #f4f4f4;
+    font-size: 600%;
     font-family: 'Jura', sans-serif;
-    text-transform: uppercase;
-    padding: 7%;
+    padding: 9%;
+    text-shadow: 2px 2px 6px black;
 }
 
 /* Image styling for each section */
