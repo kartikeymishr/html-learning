@@ -22,7 +22,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 	</head>
-	<body>	
+	<body>
+		<!--Navbar  -->
 		<div class="navbar navbar_fixed_top">
 			<div class="container">
 				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
@@ -109,6 +110,7 @@
 		</div>
 	
 		<div class="container" id="main">
+		<!-- Carousel -->
 		<div class="carousel slide" id="myCarousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -157,6 +159,7 @@
 			</a>
 		</div>
 
+		<!-- Callout -->
 		<div class="row" id="bigCallout">
 			<div class="col-12">
 				<div class="alert alert-success alert-block fade in" id="successAlert">
@@ -201,6 +204,7 @@
 			</div>
 		</div>
 
+		<!-- Features Panel Heading -->
 		<div class="row" id="featuresHeading">
 			<div class="col-12">
 				<h2>
@@ -213,6 +217,7 @@
 			</div>
 		</div>
 
+		<!-- Features Panel -->
 		<div class="row" id="features">
 			<!-- HTML5 Panel -->
 			<div class="col-sm-4">
@@ -275,8 +280,171 @@
 			</div>
 		</div>
 
+		<!-- Tabs -->
 		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3>
+					Neat Tabbable Content
+				</h3>
 
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+						 
+						<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4>
+								<span class="glyphicon glyphicon-map-marker"></span>
+								  Our Location
+								<small>More like our favourite surf spot</small>
+							</h4>
+
+							<!-- Google Map -->
+							<div class="mapouter">
+								<div class="gmap_canvas">
+									<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=niit%20stackroute&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+									
+									<style>
+										.mapouter {
+											text-align:right;
+											height:500px;
+											width:600px;
+										}
+										
+										.gmap_canvas {
+											/* overflow:hidden; */
+											background:none!important;
+											height:500px;
+											width:600px;
+										}
+									</style>
+								</div>
+
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati aut culpa soluta optio aliquam consectetur. Maiores, nostrum quae accusamus nulla eveniet itaque illo, id deleniti minus laboriosam suscipit autem!
+							</p>
+
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati aut culpa soluta optio aliquam consectetur. Maiores, nostrum quae accusamus nulla eveniet itaque illo, id deleniti minus laboriosam suscipit autem!
+							</p>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="tab2">
+						<h4>
+							A Left Floated Picture
+
+							<small>
+								Using Placehold.it
+							</small>
+						</h4>
+
+						<img src="http://via.placeholder.com/140x140" class="thumbnail pull-left">
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At id ducimus quam aliquid, voluptate ipsam eum nobis tenetur iusto tempora doloremque fugit voluptatum aliquam quidem atque veniam facere dignissimos porro!
+						</p>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, nisi. Provident, rerum, atque corrupti quisquam reprehenderit sint quasi voluptas quod nihil in expedita dolorem impedit eum qui porro tempora nemo!
+						</p>
+
+						<hr>
+
+						<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+							<span class="glyphicon glyphicon-hand-up"></span>
+							Click for a Modal Window
+						</a>
+
+						<!-- Modal Window -->
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialogue">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+
+										<h4 class="modal-title">
+											A Modal Window
+										</h4>
+									</div>
+
+									<div class="modal-body">
+										<h4>
+											Text in a modal
+										</h4>
+
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit libero sit quasi, necessitatibus incidunt animi excepturi, modi ad deserunt iusto. Libero dicta itaque voluptatum quibusdam eaque iusto ut laboriosam?
+										</p>
+
+										<h4>
+											Popovers in a modal
+										</h4>
+
+										<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button!</a>
+
+										<h4>
+											Tooltips in a modal
+										</h4>
+
+										<a href="#">This link</a> should have a tooltip, and so should <a href="#">this one.</a>
+
+										<hr>
+
+										<p>
+											<small class="text-muted">
+												PS: This form doesn't do anything. Just a heads-up!
+											</small>
+										</p>
+
+										<!-- Modal Form -->
+										<form action="" class="form-horizontal">
+											<div class="form-group">
+												<label for="inputName" class="col-lg-2 control-label">
+													Name
+												</label>
+												<div class="col-lg-10">
+													<input type="text" class="form-control" id="inputName" placeholder="Name" type="text">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label for="inputEmail" class="col-lg-2 control-label">
+													Email
+												</label>
+												<div class="col-lg-10">
+													<input type="text" class="form-control" id="inputEmail" placeholder="Email" type="text">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label for="inputMessage" class="col-lg-2 control-label">
+													Message
+												</label>
+												<div class="col-lg-10">
+													<textarea name="" id="inputMessage" class="form-control" cols="30" rows="3" placeholder="Message"></textarea>
+
+													<button class="btn btn-success pull-right" type="submit">
+														Send
+													</button>
+												</div>
+											</div>
+										</form>										
+									</div>
+
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+										<button class="btn btn-primary" type="button">Save Changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="row" id="moreCourses">
@@ -295,7 +463,9 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	
 	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	<script>
+		window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+	</script>
 	
 	<!-- Bootstrap JS -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>

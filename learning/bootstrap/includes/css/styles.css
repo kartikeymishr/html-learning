@@ -14,11 +14,20 @@ Notes:	 Hand coded for Udemy.com
    Layout
    -------------------------------------- */
 
-#features {
+.gmap_canvas {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+   #features {
     text-align: center;
 }
 
 #features img {
+    margin-bottom: 20px;
+}
+
+#inputMessage {
     margin-bottom: 20px;
 }
 
@@ -59,10 +68,6 @@ body {
    Carousel
    -------------------------------------- */
 
-/* #myCarousel {
-    margin-top: 20px;
-} */
-
 .carousel-caption {
     font-size: 20px;
 }
@@ -98,6 +103,10 @@ body {
 
 .well {
     margin: 20px 0px;
+}
+
+.tabbable img.thumbnail {
+    margin: 0 20px 10px 0;
 }
 
 /* --------------------------------------
