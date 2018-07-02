@@ -22,6 +22,17 @@ Notes:	 Hand coded for Udemy.com
 
 body {
     font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.well .page-header {
+    margin-top: 0;
+}
+
+.well .page-header h1 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
 }
 
 
@@ -74,7 +85,13 @@ body {
    Global Styles
    -------------------------------------- */
 
+.alert {
+    margin-top: 20px;
+}
 
+.well {
+    margin: 20px 0px;
+}
 
 /* --------------------------------------
    Media Queries
