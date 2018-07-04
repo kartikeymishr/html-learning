@@ -36,28 +36,110 @@ Notes:	 Hand coded for Udemy.com
    -------------------------------------- */
 
 
+/* --------------------------------------
+   Carousel Pills
+   -------------------------------------- */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 5px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
 
+hr {
+    margin-top: 0px;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
 
+footer {
+    
+}
+
+footer #social {
+    text-align: center;
+}
+
+footer i {
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+footer a {
+    color: grey;
+}
+
+footer a:hover .fa-facebook-f {
+    color: #3b5998;
+}
+footer a:hover .fa-twitter {
+    color: #1da1f2;
+}
+footer a:hover .fa-instagram {
+    color: #8a3ab9;
+}
+footer a:hover .fa-google-plus-g {
+    color: #db4437;
+}
+footer a:hover .fa-reddit-alien {
+    color: #ff4301;
+}
+footer a:hover .fa-pinterest {
+    color: #bd081c;
+}
+
+footer .links {
+    display: block;
+    text-align: center;
+}
+
+/* #galleryPills {
+    margin-top: 100px;
+} */
 
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
-	
+@media (max-width: 480px) {  
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-	
-}
+	.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+} 
 
 /* Large desktop */
-@media (min-width: 1200px) {
-	
+@media (min-width: 1080px) {
+	.carousel img {
+        height: 650px;
+    }
 }

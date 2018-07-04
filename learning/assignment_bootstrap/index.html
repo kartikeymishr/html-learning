@@ -27,6 +27,12 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 		
+		<!-- Additional Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		
 	</head>
 	<body>
 	
@@ -37,38 +43,214 @@
 		<div class="container">
 			<!-- Logo -->
 			<a href="#" class="navbar-brand">Navbar</a>
-			<ul class="navbar-nav">
-				<li class="navbar-nav">
-					<a href="#" class="nav-link active">Home</a>
-				</li>
-				<li class="navbar-nav">
-					<a href="#" class="nav-link">Pages</a>
-				</li>
-				<li class="navbar-nav">
-					<a href="#" class="nav-link">Portfolio</a>
-				</li>
-				<li class="navbar-nav">
-					<a href="#" class="nav-link">Blog</a>
-				</li>
-			</ul>
+
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navig">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navig">
+				<ul class="navbar-nav ml-auto">
+					<li class="navbar-nav active">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="navbar-nav">
+						<a href="#" class="nav-link">Pages</a>
+					</li>
+					<li class="navbar-nav">
+						<a href="#" class="nav-link">Portfolio</a>
+					</li>
+					<li class="navbar-nav">
+						<a href="#" class="nav-link">Blog</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
-	
 
-	<!-- All Javascript at the bottom of the page for faster page loading -->
+	<!-- Hero / Carousel -->
+	<div id="hero" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ul class="carousel-indicators">
+			<li data-target="#hero" data-slide-to="0" class="active"></li>
+			<li data-target="#hero" data-slide-to="1"></li>
+			<li data-target="#hero" data-slide-to="2"></li>
+		</ul>
+
+		<!-- Slideshow -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel1.jpg" alt="Carousel_1">
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel2.jpg" alt="Carousel_2">
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel3.jpg" alt="Carousel_3">
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a href="#hero" class="carousel-control-prev" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a href="#hero" class="carousel-control-next" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+
+	<hr>
+	
+	<!-- Tabs for Gallery navigation -->
+	<div class="container">
+		<!-- Pills -->
+		<nav>
+			<ul id="galleryPills" class="nav nav-pills mb-3 nav-fill sticky-top">
+				<li class=" nav-item active">
+					<a class="nav-link active" href="#colorsOfIndia" data-toggle="pill">Colors of India</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#shotsFromAbove" data-toggle="pill">Shots From Above</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#thinkYellow" data-toggle="pill">Think Yellow</a>
+				</li>
+			</ul>
 		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
+			<!-- Pill content -->
+			<div class="tab-content">
+			<!-- Colors of India -->
+			<div id="colorsOfIndia" class="tab-pane fade show active">
+				<h3>Colors of India</h3>
 	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+				<div class="row">
+					<div class="column">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi1.jpg" alt="IMG1">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi2.jpg" alt="IMG2">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi3.jpg" alt="IMG3">
+					</div>
+					<div class="column">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi4.jpg" alt="IMG4">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi5.jpg" alt="IMG5">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi6.jpg" alt="IMG6">
+					</div>
+					<div class="column">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi7.jpg" alt="IMG7">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi8.jpg" alt="IMG8">
+						<img class="img-fluid" src="images/pills/colorsOfIndia/coi9.jpg" alt="IMG9">
+					</div>
+					</div>
+			</div>
 	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+			<!-- Shots From Above -->
+			<div id="shotsFromAbove" class="tab-pane fade show">
+				<h3>Shots From Above</h3>
 	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
+				<div class="row">
+					<div class="column">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa1.jpg" alt="IMG1">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa2.jpg" alt="IMG2">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa3.jpg" alt="IMG3">
+						</div>
+					<div class="column">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa4.jpg" alt="IMG4">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa5.jpg" alt="IMG5">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa6.jpg" alt="IMG6">
+					</div>
+					<div class="column">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa7.jpg" alt="IMG7">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa8.jpg" alt="IMG8">
+						<img class="img-fluid" src="images/pills/shotsFromAbove/soa9.jpg" alt="IMG9">
+					</div>
+				</div>			
+			</div>
+				
+			<!-- Think Yellow -->
+			<div id="thinkYellow" class="tab-pane fade">
+				<h3>Think Yellow</h3>
 	
+				<div class="row">
+					<div class="column">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty6.jpg" alt="IMG1">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty2.jpg" alt="IMG2">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty3.jpg" alt="IMG3">
+					</div>
+					<div class="column">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty4.jpg" alt="IMG4">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty5.jpg" alt="IMG5">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty1.jpg" alt="IMG6">
+					</div>
+					<div class="column">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty7.jpg" alt="IMG7">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty8.jpg" alt="IMG8">
+						<img class="img-fluid" src="images/pills/thinkYellow/ty9.jpg" alt="IMG9">
+					</div>
+				</div>	
+			</div>
+		</div>	
+		</nav>
+		<br><hr><br>
+	</div>
+
+	<!-- Footer -->
+	<footer id="main-footer" class="p-5 bg-light">
+		<div class="container">
+			<div class="row">
+				<!-- Social Links Column -->
+				<div class="col" id="social">
+					<h4>
+						Reach Us
+					</h4>
+
+					<div class="links">
+						<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+						<a href="https://plus.google.com"><i class="fab fa-google-plus-g"></i></a>
+						<a href="https://www.reddit.com"><i class="fab fa-reddit-alien"></i></a>
+						<a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>         
+					</div>
+				</div>
+				<div class="col">
+					<div class="row">
+						<div class="col">
+							<h5>
+								Get Started
+							</h5>
+
+							<ul class="list-unstyled">
+								<li><a href="#" class="nav-link p-0">Home</a></li>
+								<li><a href="#" class="nav-link p-0">Sign Up</a></li>
+								<li><a href="#" class="nav-link p-0">Downloads</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h5>
+								About Us
+							</h5>
+
+							<ul class="list-unstyled">
+								<li><a href="#" class="nav-link p-0">Company Information</a></li>
+								<li><a href="#" class="nav-link p-0">Contact Us</a></li>
+								<li><a href="#" class="nav-link p-0">Reviews</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<h5>
+								Support
+							</h5>
+
+							<ul class="list-unstyled">
+								<li><a href="#" class="nav-link p-0">FAQ</a></li>
+								<li><a href="#" class="nav-link p-0">Help Desk</a></li>
+								<li><a href="#" class="nav-link p-0">Forums</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 	</body>
 </html>
 
