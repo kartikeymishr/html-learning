@@ -63,7 +63,16 @@ Notes:	 Hand coded for Udemy.com
 
 .carousel {
     background-size: contain;
+    width: auto;
+    height: auto;
 }
+
+/* .carousel img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:90%;
+} */
 
 .carousel h4 {
     font-family: 'Bree Serif', serif;
@@ -276,7 +285,8 @@ hr {
     }
 
     .carousel img {
-        height: 350px;
+        height: auto;
+        width: auto;
     }
 }
 
@@ -317,6 +327,13 @@ hr {
         height: 500px;
     }
 } 
+
+@media (max-width: 1080px) {
+    .carousel img {
+        height: auto;
+        width: auto;
+    }
+}
 
 /* Large desktop */
 @media (min-width: 1080px) {
