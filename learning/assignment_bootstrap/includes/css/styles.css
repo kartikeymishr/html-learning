@@ -24,23 +24,63 @@ Notes:	 Hand coded for Udemy.com
     font-size: 15px;
 }
 
+.featured h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+}
+
 /* --------------------------------------
    Navbar
    -------------------------------------- */
    
-   .navbar-brand {
-       padding: 13px 15px;
-   }
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+.navbar .navbar-nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
    
    
 /* --------------------------------------
    Carousel
    -------------------------------------- */
 
+.carousel {
+    background-size: contain;
+}
+
+.carousel h4 {
+    font-family: 'Bree Serif', serif;
+    font-size: 60px;
+}
+
+.carousel p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
 
 /* --------------------------------------
-   Carousel Pills
+   Pills
    -------------------------------------- */
+
+.tab-content h3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+    padding: 30px;
+    text-align: center;
+}
+
+#galleryPills {
+    font-family: 'Bree Serif', serif;
+}
 
 .row {
     display: flex;
@@ -61,46 +101,90 @@ Notes:	 Hand coded for Udemy.com
     vertical-align: middle;
 }
 
-
 /* --------------------------------------
-   Global Styles
+   Jumbotron
    -------------------------------------- */
-
-hr {
-    margin-top: 0px;
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-}
-
-/* .modal-dailog {
-    width: 800px;
-} */
 
 .jumbotron {
     background-image: url("../../images/jumbotron/jumbotron_opacity.jpg");
     background-size: cover;
-    /* opacity: 0.5; */
+}
+
+.jumbotron .page-header {
+    font-family: 'Bree Serif', serif;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+}
+
+.jumbotron button {
+    font-size: 17px;
+}
+
+.jumbotron .page-content {
+    font-family: 'Raleway', sans-serif;
 }
 
 .jumbotron .jumbotron-content {
     color: #303030;
 }
 
-.mapouter {
-    text-align:right;
-    height:400px;
-    width:100%;
-}
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:400px;
-    width:100%;
+/* --------------------------------------
+   Modal
+   -------------------------------------- */
+
+.modal {
+    font-family: 'Raleway', sans-serif;
 }
 
+.modal h4 {
+    font-family: 'Bree Serif', serif;
+}
+
+.modal h4 small {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+
+/* --------------------------------------
+   Map
+   -------------------------------------- */
+
+.map h3 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    padding: 30px;
+}
+
+.mapouter {
+    text-align: right;
+    height: 400px;
+    width: 100%;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 400px;
+    width: 100%;
+}
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+
 footer {
-    
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer ul {
+    font-family: 'Raleway', serif;
 }
 
 footer #social {
@@ -141,33 +225,81 @@ footer .links {
     text-align: center;
 }
 
-/* #galleryPills {
-    margin-top: 100px;
-} */
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+hr {
+    margin-top: 0px;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
 
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
-/* Portrait & landscape phone */
-@media (max-width: 480px) {  
+@media (max-width: 500px) {  
     .column {
         flex: 100%;
         max-width: 100%;
     }
+
+    .carousel-caption h4 {
+        font-size: 14px;
+    }
+
+    .carousel-caption p {
+        font-size: 8px;
+    }
+
+    .carousel img {
+        height: 350px;
+    }
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 	.column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .carousel-caption h4 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .carousel img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+	.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-caption h4 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .carousel img {
+        height: 500px;
     }
 } 
 
 /* Large desktop */
 @media (min-width: 1080px) {
 	.carousel img {
-        height: 650px;
+        height: 950px;
     }
 }

@@ -5,7 +5,7 @@
 <head>
 
 	<!-- Website Title & Description for Search Engine purposes -->
-	<title></title>
+	<title>photoGRAPHER</title>
 	<meta name="description" content="">
 
 	<meta charset="UTF-8">
@@ -26,7 +26,7 @@
 	<script src="includes/js/modernizr-2.6.2.min.js"></script>
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
 
 </head>
 
@@ -38,12 +38,13 @@
 	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light mb-3">
 		<div class="container">
 			<!-- Logo -->
-			<a href="#" class="navbar-brand">Navbar</a>
+			<a href="#" class="navbar-brand">photoGRAPHER</a>
 
 			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navig">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+			<!-- Navbar Links -->
 			<div class="collapse navbar-collapse" id="navig">
 				<ul class="navbar-nav ml-auto">
 					<li class="navbar-nav active">
@@ -70,12 +71,16 @@
 			<li data-target="#hero" data-slide-to="0" class="active"></li>
 			<li data-target="#hero" data-slide-to="1"></li>
 			<li data-target="#hero" data-slide-to="2"></li>
+			<li data-target="#hero" data-slide-to="3"></li>
+			<li data-target="#hero" data-slide-to="4"></li>
+			<li data-target="#hero" data-slide-to="5"></li>
+			<li data-target="#hero" data-slide-to="6"></li>
 		</ul>
 
 		<!-- Slideshow -->
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="img-fluid d-block w-100" src="images/carousel/carousel1.jpg" alt="Carousel_1">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel5.jpg" alt="Carousel_1">
 			</div>
 			<div class="carousel-item">
 				<img class="img-fluid d-block w-100" src="images/carousel/carousel2.jpg" alt="Carousel_2">
@@ -83,6 +88,30 @@
 			<div class="carousel-item">
 				<img class="img-fluid d-block w-100" src="images/carousel/carousel3.jpg" alt="Carousel_3">
 			</div>
+			<div class="carousel-item">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel4.jpg" alt="Carousel_4">
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel1.jpg" alt="Carousel_5">
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel6.jpg" alt="Carousel_6">
+			</div>
+			<div class="carousel-item">
+				<img class="img-fluid d-block w-100" src="images/carousel/carousel7.jpg" alt="Carousel_7">
+			</div>
+		</div>
+
+		<!-- Caption -->
+		<div class="carousel-caption">
+			<h4>
+				Welcome to photoGRAPHER
+			</h4>
+
+			<p>
+				The internet's source for the most gorgeous free-for-use photographs uploaded by talented artists all around the world. Join
+				the community to become one of us!
+			</p>
 		</div>
 
 		<!-- Controls -->
@@ -96,27 +125,54 @@
 
 	<hr>
 
+	<!-- Section Title -->
+	<div class="container">
+		<div class="featured text-center p-3 mb-3">
+			<h2>
+				Featured Collections
+			</h2>
+		</div>
+	</div>
+
 	<!-- Tabs for Gallery navigation -->
 	<div class="container">
 		<!-- Pills -->
 		<nav>
-			<ul id="galleryPills" class="nav nav-pills mb-3 nav-fill sticky-top">
-				<li class=" nav-item active">
-					<a class="nav-link active" href="#colorsOfIndia" data-toggle="pill">Colors of India</a>
+			<ul id="galleryPills" class="nav nav-pills mb-3 nav-fill">
+				<li class="nav-item active">
+					<a class="nav-link active" href="#colorsOfIndia" data-toggle="pill">
+						Colors of India
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#shotsFromAbove" data-toggle="pill">Shots From Above</a>
+					<a class="nav-link" href="#shotsFromAbove" data-toggle="pill">
+						Shots From Above
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#thinkYellow" data-toggle="pill">Think Yellow</a>
+					<a class="nav-link" href="#thinkYellow" data-toggle="pill">
+						Think Yellow
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#nightLights" data-toggle="pill">
+						Night Lights
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#theColourPurple" data-toggle="pill">
+						The Colour Purple
+					</a>
 				</li>
 			</ul>
 
 			<!-- Pill content -->
 			<div class="tab-content">
 				<!-- Colors of India -->
-				<div id="colorsOfIndia" class="tab-pane fade show active">
-					<h3>Colors of India</h3>
+				<div id="colorsOfIndia" class="tab-pane fade show active pt-0">
+					<h3>
+						Colors of India
+					</h3>
 
 					<div class="row">
 						<div class="column">
@@ -161,7 +217,7 @@
 				</div>
 
 				<!-- Think Yellow -->
-				<div id="thinkYellow" class="tab-pane fade">
+				<div id="thinkYellow" class="tab-pane fade show">
 					<h3>Think Yellow</h3>
 
 					<div class="row">
@@ -182,8 +238,56 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Night Lights -->
+				<div id="nightLights" class="tab-pane fade show">
+					<h3>Night Lights</h3>
+
+					<div class="row">
+						<div class="column">
+							<img class="img-fluid" src="images/pills/nightLights/nl1.jpg" alt="IMG1">
+							<img class="img-fluid" src="images/pills/nightLights/nl2.jpg" alt="IMG2">
+							<img class="img-fluid" src="images/pills/nightLights/nl3.jpg" alt="IMG3">
+							<img class="img-fluid" src="images/pills/nightLights/nl4.jpg" alt="IMG4">
+						</div>
+						<div class="column">
+							<img class="img-fluid" src="images/pills/nightLights/nl5.jpg" alt="IMG5">
+							<img class="img-fluid" src="images/pills/nightLights/nl6.jpg" alt="IMG6">
+							<img class="img-fluid" src="images/pills/nightLights/nl7.jpg" alt="IMG7">
+						</div>
+						<div class="column">
+							<img class="img-fluid" src="images/pills/nightLights/nl8.jpg" alt="IMG8">
+							<img class="img-fluid" src="images/pills/nightLights/nl9.jpg" alt="IMG9">
+							<img class="img-fluid" src="images/pills/nightLights/nl10.jpg" alt="IMG10">
+						</div>
+					</div>
+				</div>
+
+				<!-- The Colour Purple -->
+				<div id="theColourPurple" class="tab-pane fade show">
+					<h3>The Colour Purple</h3>
+
+					<div class="row">
+						<div class="column">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp1.jpg" alt="IMG1">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp2.jpg" alt="IMG2">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp3.jpg" alt="IMG3">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp4.jpg" alt="IMG4">
+						</div>
+						<div class="column">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp5.jpg" alt="IMG5">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp6.jpg" alt="IMG6">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp7.jpg" alt="IMG7">
+						</div>
+						<div class="column">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp8.jpg" alt="IMG8">
+							<img class="img-fluid" src="images/pills/theColourPurple/tcp9.jpg" alt="IMG9">
+						</div>
+					</div>
+				</div>
 			</div>
 		</nav>
+
 		<br>
 		<hr>
 		<br>
@@ -194,15 +298,17 @@
 		<div class="jumbotron">
 			<div class="jumbotron-content">
 				<div class="page-header">
-					<h2>
+					<h1>
 						Photo submission
-					</h2>
+					</h1>
 				</div>
+
 				<div class="page-content mt-5">
 					<p>
 						Like our gallery? Want to get your own photographs featured? Here's the chance to do so! Just click on submit button now
 						and we will get in touch with you shortly.
 					</p>
+
 					<div class="submit-btn text-right mr-2">
 						<button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#submissionModal">
 							Submit Photograph
@@ -215,17 +321,18 @@
 
 	<!-- Submission Modal -->
 	<div class="modal" id="submissionModal">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<!-- Modal Header -->
 				<div class="modal-header">
 					<h4 class="modal-title">
-						Join Unsplash
-						<small class="text-muted">
+						Join photoGRAPHER
+						<small class="text-muted text-right">
 							Already have an account?
 							<a href="#">Login</a>
 						</small>
 					</h4>
+
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 
@@ -237,21 +344,27 @@
 					<br>
 
 					<form>
+						<!-- First Name, Last Name -->
 						<div class="form-row">
 							<div class="col">
 								<label for="firstName">First Name</label>
 								<input type="text" class="form-control" id="firstName" placeholder="First Name">
 							</div>
+
 							<div class="col">
 								<label for="lastName">Last Name</label>
 								<input type="text" class="form-control" id="lastName" placeholder="Last Name">
 							</div>
 						</div>
+
+						<!-- Email Address -->
 						<div class="form-group mt-3">
 							<label for="email">Email Adress</label>
 							<input class="form-control" type="email" id="email" placeholder="Enter Email">
 							<small class="form-text text-muted">Your email will not be shared with anyone</small>
 						</div>
+
+						<!-- Username -->
 						<div class="form-group mt-3">
 							<label for="username">
 								Username
@@ -261,6 +374,8 @@
 							</label>
 							<input class="form-control" type="text" id="username" placeholder="Enter Username">
 						</div>
+
+						<!-- Password -->
 						<div class="form-group mt-3">
 							<label for="password">
 								Password
@@ -278,6 +393,7 @@
 					<button class="btn btn-outline-success">
 						Join
 					</button>
+
 					<button class="btn btn-outline-danger" data-dismiss="modal">
 						Close
 					</button>
@@ -290,23 +406,20 @@
 	<div class="map">
 		<div class="container">
 			<h3>
-				Google Maps
+				Find us here
 			</h3>
 		</div>
 		<div class="mapouter">
 			<div class="gmap_canvas">
-				<iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=niit%20koramangla&t=&z=17&ie=UTF8&iwloc=&output=embed"
+				<iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=niit%20stackroute&t=&z=17&ie=UTF8&iwloc=&output=embed"
 				 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-				<a href="https://www.maps-erstellen.de">
-					maps-erstellen.de
-				</a>
+				<a href="https://www.pureblack.de">pureblack.de</a>
 			</div>
 		</div>
 	</div>
 
-
 	<!-- Footer -->
-	<footer id="main-footer" class="p-5 bg-light">
+	<footer id="main-footer" class="pt-5 pb-3 bg-light">
 		<div class="container">
 			<div class="row">
 				<!-- Social Links Column -->
@@ -336,9 +449,11 @@
 						</a>
 					</div>
 				</div>
+
 				<!-- Abstract Column -->
 				<div class="col">
 					<div class="row">
+						<!-- Get Started -->
 						<div class="col">
 							<h5>
 								Get Started
@@ -356,6 +471,8 @@
 								</li>
 							</ul>
 						</div>
+
+						<!-- About Us -->
 						<div class="col">
 							<h5>
 								About Us
@@ -373,6 +490,8 @@
 								</li>
 							</ul>
 						</div>
+
+						<!-- Support -->
 						<div class="col">
 							<h5>
 								Support
