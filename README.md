@@ -1,5 +1,2 @@
-
-HTML Hello K
-=======
-HTML/CSS - Exercise 1
+HTML Stackroute Training repository
 
