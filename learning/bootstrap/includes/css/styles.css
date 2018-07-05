@@ -19,6 +19,14 @@ Notes:	 Hand coded for Udemy.com
     text-align: left;
 }
 
+.modal {
+    padding: 5% 30%;
+    
+}
+.modal-dialogue {
+    width: 800px;
+}
+
    #features {
     text-align: center;
 }

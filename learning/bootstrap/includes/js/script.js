@@ -21,4 +21,6 @@ $(function() {
     });
 
     $('a.pop').popover();
+
+    $('[rel="tooltip"]').tooltip();
 });
